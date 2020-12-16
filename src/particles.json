@@ -1,10 +1,10 @@
 {
   "background": {
     "color": {
-      "value": "#282c34"
+      "value": "1b222c"
     }
   },
-  "fpsLimit": 60,
+  "fpsLimit": 120,
   "interactivity": {
     "detectsOn": "window",
     "events": {
@@ -14,7 +14,7 @@
       },
       "onHover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "push"
       },
       "resize": true
     },
@@ -36,10 +36,10 @@
   },
   "particles": {
     "color": {
-      "value": "#ffffff"
+      "value": "c40000"
     },
     "links": {
-      "color": "#ffffff",
+      "color": "#eb0000",
       "distance": 150,
       "enable": true,
       "opacity": 0.5,
