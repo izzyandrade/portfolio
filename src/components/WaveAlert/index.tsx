@@ -1,32 +1,45 @@
 import React from "react";
 import "./style.css";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { useSpring, animated, config } from "react-spring";
 
-interface SendProps {
-  title: String;
-  description: any;
-  img: String;
+interface Props {
+  title: string;
+  description: string;
+  img: string;
   index: number;
 }
 
-interface SendState {}
+const WaveAlert: React.FC<Props> = ({ title, description, img, index }) => {
+  const calc = (x: any, y: any) => [
+    -(y - window.innerHeight / 2) / 20,
+    (x - window.innerWidth / 2) / 20,
+    1.2,
+  ];
+  const trans = (x: any, y: any, s: any) =>
+    `perspective(500px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
-export default class WaveAlert extends React.Component<SendProps, SendState> {
-  render() {
-    const { title, description, img, index } = this.props;
-    return (
-      <div className="wave-alert-box">
-        <div>
-          <div className="wave-alert-title">
-            <p>{title}</p>
-            <img src={require(`../../assets/img/${img}`)} alt="cardimg" />
-          </div>
-          <div className="wave-alert-description">{description}</div>
+  const [props, set] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: { mass: 1, tension: 450, friction: 26 },
+  }));
+
+  return (
+    <animated.div
+      className="wave-alert-box"
+      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      style={{ transform: props.xys.interpolate(trans) }}
+    >
+      <div>
+        <div className="wave-alert-title">
+          <p>{title}</p>
+          <img src={require(`../../assets/img/${img}`)} alt="cardimg" />
         </div>
+        <div className="wave-alert-description">{description}</div>
       </div>
-    );
-  }
-}
+    </animated.div>
+  );
+};
 
-// Retorne na data e hora marcadas para
-// visualizar o link da vídeo conferência.
+export default WaveAlert;

@@ -12,6 +12,18 @@ const data = {
       description: "top esse site ae",
       img: "code.png",
     },
+    {
+      index: 2,
+      title: "Portfolio",
+      description: "top esse site ae",
+      img: "code.png",
+    },
+    {
+      index: 3,
+      title: "Portfolio",
+      description: "top esse site ae",
+      img: "code.png",
+    },
   ],
 };
 

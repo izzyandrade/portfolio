@@ -17,6 +17,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-spring": "^9.0.0-rc.3",
     "react-transition-group": "^4.4.1",
     "react-tsparticles": "^1.17.10",
     "styled-components": "^5.2.0",
