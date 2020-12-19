@@ -4,22 +4,15 @@ import data from "./data";
 import "./styles.css";
 import { useSpring, animated, config } from "react-spring";
 
-const Body = () => {
+const Body = ({ reference }) => {
   const AnimatedWaveAlert = animated(WaveAlert);
 
   const animatedProps = useSpring({ config: config.default });
 
   return (
-    <div className="wave-alert-container">
+    <div className="wave-alert-container" ref={reference}>
       {data.properties.map((property) => {
-        return (
-          <AnimatedWaveAlert
-            title={data.properties[0].title}
-            description={data.properties[0].description}
-            img={data.properties[0].img}
-            index={data.properties[0].index}
-          />
-        );
+        return <AnimatedWaveAlert property={property} />;
       })}
     </div>
   );

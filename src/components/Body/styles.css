@@ -5,7 +5,17 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
-  background-color: #969695;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #8e0e00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1f1c18,
+    #ff6969
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1f1c18,
+    #ff6969
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

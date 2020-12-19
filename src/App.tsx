@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import NavBar from "./components/NavBar";
@@ -7,12 +7,15 @@ import Body from "./components/Body";
 import { CSSTransition } from "react-transition-group";
 
 function App() {
+  const scrollToDiv = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  const refBody = useRef();
+
   return (
     <>
       <Router>
-        <NavBar />
+        <NavBar click={() => scrollToDiv(refBody)} />
         <Header />
-        <Body />
+        <Body reference={refBody} />
       </Router>
     </>
   );

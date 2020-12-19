@@ -6,7 +6,7 @@ export interface StylesDictionary {
   [Key: string]: CSSProperties;
 }
 
-const NavBar = () => {
+const NavBar = ({ click }) => {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
@@ -28,7 +28,10 @@ const NavBar = () => {
         {MenuItem.map((item, index) => {
           return (
             <li key={index}>
-              <a className={item.cName} href={item.url}>
+              <a
+                className={item.cName}
+                onClick={item.title === "About" ? click : () => {}}
+              >
                 {item.title}
               </a>
             </li>
