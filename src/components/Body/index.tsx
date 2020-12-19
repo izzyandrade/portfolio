@@ -1,17 +1,15 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
 import { animated } from "react-spring";
-import WaveAlert from "../WaveAlert";
-import AboutMeSection from "../AboutMeSection";
-import data, { aboutMeSection } from "./data";
 import useWindowDimensions from "../../utils/useWindowDimensions";
+import AboutMeSection from "../AboutMeSection";
+import WaveAlert from "../WaveAlert";
+import data, { aboutMeSection } from "./data";
 import "./styles.css";
 
 const Body = ({ reference }) => {
   const AnimatedWaveAlert = animated(WaveAlert);
 
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   return (
     <div>

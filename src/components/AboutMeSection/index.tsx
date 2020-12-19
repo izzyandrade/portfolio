@@ -5,7 +5,7 @@ import useWindowDimensions from "../../utils/useWindowDimensions";
 import "./styles.css";
 
 const AboutMeSection = ({ aboutMeSection }) => {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const renderDesktop = () => {
     return aboutMeSection.info.map((info) => {
