@@ -19,7 +19,7 @@ const Body = ({ reference }) => {
       <div className="fade-text-container">
         <div className="about-me-header">
           <Zoom top delay={0}>
-            <h1 style={{ color: "white" }}>A little more about me</h1>
+            <h1 style={{ color: "white" }}>About me, and my carreer</h1>
           </Zoom>
         </div>
         {aboutMeSection.info.map((info) => {
