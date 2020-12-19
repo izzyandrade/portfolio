@@ -9,8 +9,6 @@ import "./styles.css";
 const Body = ({ reference }) => {
   const AnimatedWaveAlert = animated(WaveAlert);
 
-  const animatedProps = useSpring({ config: config.default });
-
   return (
     <div>
       <div className="wave-alert-container" ref={reference}>

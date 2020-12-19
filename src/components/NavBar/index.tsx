@@ -28,12 +28,12 @@ const NavBar = ({ click }) => {
         {MenuItem.map((item, index) => {
           return (
             <li key={index}>
-              <a
+              <span
                 className={item.cName}
                 onClick={item.title === "About" ? click : () => {}}
               >
                 {item.title}
-              </a>
+              </span>
             </li>
           );
         })}

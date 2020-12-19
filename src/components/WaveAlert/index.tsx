@@ -1,7 +1,6 @@
-import React, { useRef, MutableRefObject } from "react";
+import React, { MutableRefObject, useRef } from "react";
+import { animated, useSpring } from "react-spring";
 import "./style.css";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
-import { useSpring, animated, config } from "react-spring";
 
 interface Props {
   property: {

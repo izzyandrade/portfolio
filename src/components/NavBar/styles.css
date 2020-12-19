@@ -107,6 +107,7 @@
   .nav-links:hover {
     background-color: var(--lighter-black);
     border-radius: 0;
+    cursor: pointer;
   }
 
   .navbar-logo {
