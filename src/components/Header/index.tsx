@@ -12,7 +12,7 @@ const Header = () => {
   const size = useWindowSize();
   return (
     <>
-      {size.width > 650 ? (
+      {size.width > 700 ? (
         <Particles
           options={particlesOptions as RecursivePartial<IOptions>}
           height={"800px"}

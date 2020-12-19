@@ -19,32 +19,3 @@
     #ff6969
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.fade-text-container {
-  height: 500px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--lighter-black);
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 70px;
-}
-
-.about-me-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 100%;
-}
-
-.about-me-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-}

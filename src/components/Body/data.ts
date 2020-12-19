@@ -52,7 +52,12 @@ export const aboutMeSection = {
     },
     {
       index: 1,
-      text: "Izzy",
+      text: `My name is Israel Andrade, I live in Curitiba, PR - Brazil, and I am 23y/o. Technology has been present in my life since I was a child,
+       when I was already in love with videogames, and movies with cool effects (big Star Wars fan here). When I was 18, I joined college in a
+       Software Development course. Since then, I also went through a Nanodegree in Full Stack Web Development ministrated by Udacity, a virtual university from the Silicon Valley in California.
+       Today, I focus my studies in the so called OmniStack (React, React Native, Node.JS, MongoDB, Express, and much more). I have worked in some awesome companies from my country,
+       and I appreciate every opportunity I had because it made me grow as a better developer and as a better person. Today, I work in a company called Wiser Education, where I develop
+       the mobile application for a famous English school called Wise Up Online.`,
       img: "code.png",
     },
   ],
