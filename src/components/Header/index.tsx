@@ -3,6 +3,9 @@ import particlesOptions from "../../particles.json";
 import { RecursivePartial } from "tsparticles/dist/Types/RecursivePartial";
 import { IOptions } from "tsparticles/dist/Options/Interfaces/IOptions";
 import Particles from "react-tsparticles";
+import Flip from "react-reveal/Flip";
+import Zoom from "react-reveal/Zoom";
+import Pulse from "react-reveal/Pulse";
 import "./styles.css";
 
 const Header = () => {
@@ -29,17 +32,23 @@ const Header = () => {
       >
         <div className="header-content-container">
           <div className="header-image-container">
-            <img
-              src={require("../../assets/img/izzy1.jpg")}
-              alt="Israel Andrade"
-              className="header-image"
-            />
+            <Pulse delay={1000}>
+              <img
+                src={require("../../assets/img/izzy1.jpg")}
+                alt="Israel Andrade"
+                className="header-image"
+              />
+            </Pulse>
           </div>
           <div className="header-text-container">
-            <h1 style={{ color: "white" }}>ISRAEL ANDRADE</h1>
-            <p style={{ color: "white" }}>
-              React JS | React Native | Golang | PostgreSQL | Node JS
-            </p>
+            <Flip top cascade delay={300}>
+              <h1 style={{ color: "white" }}>ISRAEL ANDRADE</h1>
+            </Flip>
+            <Zoom top cascade delay={500}>
+              <p style={{ color: "white" }}>
+                React JS | React Native | Golang | PostgreSQL | Node JS
+              </p>
+            </Zoom>
           </div>
         </div>
       </div>
