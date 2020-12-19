@@ -1,9 +1,9 @@
 import React from "react";
-import WaveAlert from "../WaveAlert";
-import data, { aboutMeSection } from "./data";
-import { useSpring, animated, config } from "react-spring";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
+import { animated } from "react-spring";
+import WaveAlert from "../WaveAlert";
+import data, { aboutMeSection } from "./data";
 import "./styles.css";
 
 const Body = ({ reference }) => {
