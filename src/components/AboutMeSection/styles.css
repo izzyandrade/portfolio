@@ -1,5 +1,4 @@
 .fade-text-container {
-  height: 500px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -8,6 +7,10 @@
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 30px;
+}
+
+.about-me-container {
+  margin-bottom: 50px;
 }
 
 .about-me-header {
@@ -24,7 +27,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  flex-grow: 0;
 }
 
 .about-me-img-container {
@@ -40,7 +43,7 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .about-me-item {
     margin-top: 10px;
     flex-direction: column;
@@ -53,7 +56,6 @@
     padding-top: 10px;
     text-align: center;
     justify-content: space-between;
-    height: 870px;
   }
 
   .about-me-title {
@@ -61,7 +63,10 @@
   }
 
   .about-me-img-container img {
-    width: 100px;
-    margin-top: 200px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }

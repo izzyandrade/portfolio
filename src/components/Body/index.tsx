@@ -13,7 +13,7 @@ const Body = ({ reference }) => {
 
   return (
     <div>
-      {width > 500 ? (
+      {width > 1000 ? (
         <div className="wave-alert-container" ref={reference}>
           {data.properties.map((property) => {
             return <AnimatedWaveAlert property={property} />;

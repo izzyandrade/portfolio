@@ -23,7 +23,7 @@ body {
   height: 100%;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1000px) {
   .inside-particles-container {
     margin-top: 60px;
   }

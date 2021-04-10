@@ -94,16 +94,16 @@ const AboutMeSection = ({ aboutMeSection }) => {
   };
 
   return (
-    <>
+    <div className="about-me-container">
       <div className="about-me-header">
         <Zoom top delay={0}>
           <p className="about-me-title">About me, and my carreer</p>
         </Zoom>
       </div>
       <div className="fade-text-container">
-        {width > 700 ? renderDesktop() : renderMobile()}
+        {width > 1000 ? renderDesktop() : renderMobile()}
       </div>
-    </>
+    </div>
   );
 };
 

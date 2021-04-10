@@ -28,7 +28,7 @@
   justify-content: center;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1000px) {
   .header-content-container {
     flex-direction: column;
     justify-content: flex-start;

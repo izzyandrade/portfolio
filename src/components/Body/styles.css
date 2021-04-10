@@ -5,8 +5,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-right: 10%;
+  padding-left: 10%;
+  width: 100%;
   background: #8e0e00; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,

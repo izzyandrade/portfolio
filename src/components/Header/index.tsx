@@ -12,7 +12,7 @@ const Header = () => {
   const size = useWindowSize();
   return (
     <>
-      {size.width > 700 ? (
+      {size.width > 1000 ? (
         <Particles
           options={particlesOptions as RecursivePartial<IOptions>}
           height={"800px"}
@@ -25,7 +25,7 @@ const Header = () => {
       )}
       <div
         style={
-          size.width > 650
+          size.width > 1000
             ? containerStyle.bigScreen
             : containerStyle.smallScreen
         }
