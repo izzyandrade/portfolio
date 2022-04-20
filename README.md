@@ -4,7 +4,7 @@ This is my personal portfolio.
 I've made it public so you can take a look in the cool animation libraries I have used.
 Hope you have a good time! 😄
 
-<img src="src/assets/img/homepage.png" width="500px"/>
+<img src="src/assets/img/homepage.png" width="700px"/>
 
 ## Available Scripts
 
