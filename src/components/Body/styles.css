@@ -4,9 +4,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding-right: 10%;
-  padding-left: 10%;
+  justify-content: space-around;
+  padding-right: 15%;
+  padding-left: 15%;
   width: 100%;
   background: #8e0e00; /* fallback for old browsers */
   background: -webkit-linear-gradient(

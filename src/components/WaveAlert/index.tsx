@@ -1,6 +1,6 @@
-import React, { MutableRefObject, useRef } from "react";
-import { animated, useSpring } from "react-spring";
-import "./style.css";
+import React, { MutableRefObject, useRef } from 'react';
+import { animated, useSpring } from 'react-spring';
+import './style.css';
 
 interface Props {
   property: {
@@ -58,29 +58,20 @@ const WaveAlert: React.FC<Props> = ({ property }) => {
         transform: props.xys.interpolate(trans),
       }}
     >
-      <div>
-        <div className="wave-alert-title">
-          <p style={{ color: "white" }}>{property.title}</p>
-          <img
-            src={require(`../../assets/img/${property.img}`)}
-            alt="cardimg"
-          />
+      <a href={property.link} target="__blank" className="link-box">
+        <div>
+          <div className="wave-alert-title">
+            <p style={{ color: 'white' }}>{property.title}</p>
+            <img
+              src={require(`../../assets/img/${property.img}`)}
+              alt="cardimg"
+            />
+          </div>
+          <div className="wave-alert-description">
+            <p>{property.description}</p>
+          </div>
         </div>
-        <div className="wave-alert-description">
-          <p>{property.description}</p>
-          <p style={{ marginTop: 20 }}>
-            {property.type === "link" ? (
-              <a
-                href={property.link}
-                target="__blank"
-                className="description-link"
-              >
-                {`>`} {property.title}
-              </a>
-            ) : null}
-          </p>
-        </div>
-      </div>
+      </a>
     </animated.div>
   );
 };

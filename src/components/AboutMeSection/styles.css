@@ -37,6 +37,14 @@
   text-align: center;
 }
 
+.about-me-img-container img {
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .about-me-title {
   color: white;
   font-size: 32px;
