@@ -29,6 +29,7 @@
 .navbar-logo {
   width: 250;
   font-size: 1.8rem;
+  font-weight: 300;
   margin-bottom: 0;
 }
 
@@ -121,8 +122,8 @@
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     transform: translate(-100%, 50%);
     font-size: 1.8rem;
     cursor: pointer;
