@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import particlesOptions from "../../particles.json";
-import { RecursivePartial } from "tsparticles/dist/Types/RecursivePartial";
-import { IOptions } from "tsparticles/dist/Options/Interfaces/IOptions";
-import Particles from "react-tsparticles";
-import Flip from "react-reveal/Flip";
-import Zoom from "react-reveal/Zoom";
-import Pulse from "react-reveal/Pulse";
-import "./styles.css";
+import React, { useState, useEffect } from 'react';
+import particlesOptions from '../../particles.json';
+import { RecursivePartial } from 'tsparticles/dist/Types/RecursivePartial';
+import { IOptions } from 'tsparticles/dist/Options/Interfaces/IOptions';
+import Particles from 'react-tsparticles';
+import Flip from 'react-reveal/Flip';
+import Zoom from 'react-reveal/Zoom';
+import Pulse from 'react-reveal/Pulse';
+import './styles.css';
 
 const Header = () => {
   const size = useWindowSize();
@@ -15,12 +15,12 @@ const Header = () => {
       {size.width > 1000 ? (
         <Particles
           options={particlesOptions as RecursivePartial<IOptions>}
-          height={"800px"}
+          height={'800px'}
         />
       ) : (
         <Particles
           options={particlesOptions as RecursivePartial<IOptions>}
-          height={"600px"}
+          height={'600px'}
         />
       )}
       <div
@@ -34,7 +34,7 @@ const Header = () => {
           <div className="header-image-container">
             <Pulse delay={1000}>
               <img
-                src={require("../../assets/img/izzy1.jpg")}
+                src={require('../../assets/img/me.png')}
                 alt="Israel Andrade"
                 className="header-image"
               />
@@ -42,11 +42,11 @@ const Header = () => {
           </div>
           <div className="header-text-container">
             <Flip top cascade delay={300}>
-              <h1 style={{ color: "white" }}>ISRAEL ANDRADE</h1>
+              <h1 style={{ color: 'white' }}>ISRAEL ANDRADE</h1>
             </Flip>
             <Zoom top cascade delay={500}>
-              <p style={{ color: "white" }}>
-                React JS | React Native | Golang | PostgreSQL | Node JS
+              <p style={{ color: 'white' }}>
+                React JS | React Native | Node JS | AWS | Terraform | PostgreSQL
               </p>
             </Zoom>
           </div>
@@ -58,16 +58,16 @@ const Header = () => {
 
 const containerStyle = {
   bigScreen: {
-    position: "absolute" as "absolute",
+    position: 'absolute' as 'absolute',
     top: 100,
-    width: "100%",
-    height: "100%",
+    width: '100%',
+    height: '100%',
   },
   smallScreen: {
-    position: "absolute" as "absolute",
+    position: 'absolute' as 'absolute',
     top: 180,
-    width: "100%",
-    height: "100%",
+    width: '100%',
+    height: '100%',
   },
 };
 
@@ -83,9 +83,9 @@ function useWindowSize() {
         height: window.innerHeight,
       });
     }
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     handleResize();
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
   return windowSize;
 }
