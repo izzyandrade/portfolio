@@ -1,10 +1,11 @@
-import React from "react";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
-import useWindowDimensions from "../../utils/useWindowDimensions";
-import "./styles.css";
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+import useWindowDimensions from '../../utils/useWindowDimensions';
+import { aboutMeSection } from '../../utils/sectionInformation';
+import './styles.css';
 
-const AboutMeSection = ({ aboutMeSection }) => {
+const AboutMeSection = () => {
   const { width } = useWindowDimensions();
 
   const renderDesktop = () => {
@@ -23,12 +24,12 @@ const AboutMeSection = ({ aboutMeSection }) => {
             <div
               style={{
                 flex: 2,
-                alignItems: "center",
-                justifyContent: "center",
+                alignItems: 'center',
+                justifyContent: 'center',
               }}
             >
               <Fade left delay={1000}>
-                <p style={{ color: "white", fontWeight: "bold" }}>
+                <p style={{ color: 'white', fontWeight: 'bold' }}>
                   {info.text}
                 </p>
               </Fade>
@@ -41,12 +42,12 @@ const AboutMeSection = ({ aboutMeSection }) => {
             <div
               style={{
                 flex: 2,
-                alignItems: "center",
-                justifyContent: "center",
+                alignItems: 'center',
+                justifyContent: 'center',
               }}
             >
               <Fade right delay={1000}>
-                <p style={{ color: "white", fontWeight: "bold" }}>
+                <p style={{ color: 'white', fontWeight: 'bold' }}>
                   {info.text}
                 </p>
               </Fade>
@@ -80,12 +81,12 @@ const AboutMeSection = ({ aboutMeSection }) => {
           <div
             style={{
               flex: 2,
-              alignItems: "center",
-              justifyContent: "center",
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
             <Fade left delay={1000}>
-              <p style={{ color: "white", fontWeight: "bold" }}>{info.text}</p>
+              <p style={{ color: 'white', fontWeight: 'bold' }}>{info.text}</p>
             </Fade>
           </div>
         </div>
